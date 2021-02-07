@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  redis:
+    lettuce:
+      pool:
+        max-active: 32
+        max-idle: 16
+        max-wait: -1
+        min-idle: 8
+
+
